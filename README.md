@@ -1,26 +1,27 @@
 # portofolio
+<b>Dreamtour</b> (Development)<br>
+Built with React Native. Release version for Android available <a href="https://play.google.com/store/apps/details?id=com.dreamtour.mobile" target="_blank">here</a><br>
+<table>
+  <tr>
+    <td><img src="https://github.com/iqbalsyamhad/portofolio/blob/master/img/dream.gif" width="250px"></td>
+  </tr>
+</table>
+<hr>
 <b>Katalog Film</b><br>
+<ul>
+  <li>Native Android</li>
+  <li>Android Architecture (Jetpack)</li>
+  <li>MVVM Pattern</li>
+  <li>Online and Offline data</li>
+  <li>Repository, Livedata, Room, Pagination</li>
+</ul><br>
 <table>
   <tr>
     <td><img src="https://github.com/iqbalsyamhad/portofolio/blob/master/img/movie1.jpg" width="250px"></td>
     <td><img src="https://github.com/iqbalsyamhad/portofolio/blob/master/img/movie2.jpg" width="250px"></td>
   </tr>
 </table>
-<ul>
-  <li>Android Architecture (Jetpack)</li>
-  <li>MVVM Pattern</li>
-  <li>Online and Offline data</li>
-  <li>Repository, Room, Pagination</li>
-</ul>
 <hr>
-<a href="https://play.google.com/store/apps/details?id=com.dreamtour.mobile" target="_blank"><b>Dreamtour</b></a><br>
-<table>
-  <tr>
-    <td><img src="https://github.com/iqbalsyamhad/portofolio/blob/master/img/dream1.jpg" width="250px"></td>
-    <td><img src="https://github.com/iqbalsyamhad/portofolio/blob/master/img/dream2.jpg" width="250px"></td>
-  </tr>
-</table>
-<br>
 <a href="https://play.google.com/store/apps/details?id=gantengpermanent.bibi" target="_blank"><b>Bibi Catering</b></a><br>
 <table>
   <tr>
