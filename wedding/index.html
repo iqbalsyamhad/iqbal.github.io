@@ -61,16 +61,7 @@
 
     <div class="text">
         <p class="optional">
-        	<?php
-        		$undangans = [
-        			'Imanudin Sholeh',
-        		];
-        		$diundang = $_GET['undangan'];
-
-	        	$diundang !== null && echo '<i>Yth. '.$undangans[$diundang].' di tempat.</i>
-	        	<br>
-	        	<br>';
-        	?>
+            <div id="recipe"></div>
         	Izinkan kami mengundang sekaligus mengharapkan doa restu dari bapak/ibu dan saudara/i dalam acara pernikahan kami pada:
         </p>
         <!-- <p>iban<br> alessandro scarpellini<br> it 34 m 03589 01600 010570709079<br>Bic BKRAITMM</p> -->
@@ -89,7 +80,7 @@
          <br>
          <p class="text-big">Akad<br>09:00 WIB</p>
          <p class="text-big">Resepsi<br>11:00 WIB s/d Selesai</p>
-         <p><a href="https://www.lagraziosa.it/" target="_blank">Rumah Putri</a><br>Lingk. Banjarkolot RT 03/16 Desa Banjar<br>Kec. Banjar, Kota Banjar, Jawa Barat</p>
+         <p><a href="https://goo.gl/maps/eyntt7HTqrpNGZkv5">Rumah Putri</a><br>Lingk. Banjarkolot RT 03/16 Desa Banjar<br>Kec. Banjar, Kota Banjar, Jawa Barat</p>
     </div>
 
     <figure class="illustration-container illustration-container-small">
@@ -125,4 +116,38 @@
 
 </body>
 
+<script>
+    (function() {
+        var undangans = [
+        	'Imanudin Sholeh',
+        	'Tresna',
+        ];
+        var params = parseURLParams(window.location.toString());
+        var diundang = params.undangan;
+
+        if(diundang != null){
+            document.getElementById('recipe').innerHTML = 'Yth. ' + undangans[diundang] + ' di tempat,<br><br>';
+        }
+
+        function parseURLParams(url) {
+            var queryStart = url.indexOf("?") + 1,
+                queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+                query = url.slice(queryStart, queryEnd - 1),
+                pairs = query.replace(/\+/g, " ").split("&"),
+                parms = {}, i, n, v, nv;
+
+            if (query === url || query === "") return;
+
+            for (i = 0; i < pairs.length; i++) {
+                nv = pairs[i].split("=", 2);
+                n = decodeURIComponent(nv[0]);
+                v = decodeURIComponent(nv[1]);
+
+                if (!parms.hasOwnProperty(n)) parms[n] = [];
+                parms[n].push(nv.length === 2 ? v : null);
+            }
+            return parms;
+        }
+    })();
+</script>
 </html>
