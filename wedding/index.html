@@ -38,7 +38,7 @@
     <section class="opening">
         <h1 class="opening-title">
             <span>PUTRI</span>
-            <span>·</span>
+            <span>&</span>
             <span>IQBAL</span>
     </h1>
     </section>
@@ -112,6 +112,11 @@
 <script>
     (function() {
         var undangans = [
+            'Alumni MI Al-Maarif Salamerta',
+            'Alumni MTs Al-Hidayah Purwasaba',
+            'Mbabit Mania 🤘',
+            'TI 14 B AMIKOM PWT',
+            '',
         	'Imanudin Sholeh',
         	'Tresna',
         ];
@@ -119,7 +124,7 @@
         var diundang = params.undangan;
 
         if(diundang != null){
-            document.getElementById('recipe').innerHTML = 'Assalamu\'alaikum WR. WB.<br><br>Yth. ' + undangans[diundang] + '<br>di tempat,<br><br>';
+            document.getElementById('recipe').innerHTML = 'Assalamu\'alaikum WR. WB.<br><br><div style="background-color: #ffffff; padding: 10px; border-radius: 20px;">Yth.<br>' + undangans[diundang] + '<br>di tempat</div><br><br>';
         }
 
         function parseURLParams(url) {
